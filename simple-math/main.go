@@ -1,15 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 var equation int
 
 func main() {
 	var first, second int
 	fmt.Print("Enter first number : ")
-	fmt.Scan(&first) // fmt.Scan will read the user input, read value from pointer &first
+	// Scan and validate user input
+	if _, err := fmt.Scan(&first); err != nil {
+		log.Print("  Scan for inputs failed, due to ", err)
+		return
+	}
 	fmt.Print("Enter second number : ")
-	fmt.Scan(&second) // read value from pointer &second
+	// Scan and validate user input
+	if _, err := fmt.Scan(&second); err != nil {
+		log.Print("  Scan for inputs failed, due to ", err)
+		return
+	}
 	equation = first * second
 	fmt.Println("The result is: ", equation)
 }

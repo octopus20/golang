@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Main() {
+func Calculate() {
 
 	myarray := []int{1, 2, 3, 4, 5}
 	sum := 0

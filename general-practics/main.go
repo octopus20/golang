@@ -13,8 +13,8 @@ func main() {
 	total := mymath.Total(myarray)
 	average := mymath.Average(myarray)
 	stringsort := mystring.SortString(stringarray)
-	fmt.Println(total)
-	fmt.Println(average)
-	fmt.Println(stringsort)
+	fmt.Println("The total of array items=", total)
+	fmt.Println("The average of array items=", average)
+	fmt.Println("Orderd array:", stringsort)
 
 }

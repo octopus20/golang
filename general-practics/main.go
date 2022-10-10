@@ -17,4 +17,9 @@ func main() {
 	fmt.Println("The average of array items=", average)
 	fmt.Println("Orderd array:", stringsort)
 
+	// Find Occurances
+	st := "I like learning go and I do that every day"
+	charsoccurances := mystring.Occurrences(st)
+	fmt.Println("Orderd array:", charsoccurances)
+
 }

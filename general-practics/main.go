@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	mymath "github.com/octopus20/golang/general-practics/mymath"
-	mystring "github.com/octopus20/golang/general-practics/mystring"
+	mymath "github.com/octopus20/golang/general-practics/packages/mymath"
+	mystring "github.com/octopus20/golang/general-practics/packages/mystring"
 )
 
 func main() {
@@ -20,6 +20,6 @@ func main() {
 	// Find Occurances
 	st := "I like learning go and I do that every day"
 	charsoccurances := mystring.Occurrences(st)
-	fmt.Println("Orderd array:", charsoccurances)
+	fmt.Println("Number of occurrences of every character:", charsoccurances)
 
 }

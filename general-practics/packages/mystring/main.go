@@ -1,6 +1,7 @@
 package mystring
 
 import (
+	"fmt"
 	"sort"
 	"unicode"
 )
@@ -14,9 +15,8 @@ func SortString(stringarray []string) []string {
 	}
 }
 
-func Occurrences(st string) map[string]int {
+func Occurrences(st string) string {
 	wc := make(map[rune]int)
-	var result map[string]int
 	for _, char := range st {
 		if unicode.IsSpace(char) {
 			continue
@@ -28,13 +28,9 @@ func Occurrences(st string) map[string]int {
 		chars = append(chars, char)
 	}
 	for _, char := range chars {
-		char1 := string(char)
-		result := make(map[string]int)
-		result[char1] = wc[char]
-		//fmt.Printf("%c %d\n", char, wc[char])
-		return result
+		fmt.Printf("%c %d\n", char, wc[char])
 	}
-	return result
+	return ""
 }
 
 // func Occurrences(st string) map[string]int {

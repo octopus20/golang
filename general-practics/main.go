@@ -20,6 +20,6 @@ func main() {
 	// Find Occurances
 	st := "I like learning go and I do that every day"
 	charsoccurances := mystring.Occurrences(st)
-	fmt.Println("Number of occurrences of every character:", charsoccurances)
+	fmt.Println("Above is the number of occurrences per character", charsoccurances)
 
 }

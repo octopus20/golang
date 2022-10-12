@@ -21,5 +21,4 @@ func main() {
 	st := "I like learning go and I do that every day"
 	charsoccurances := mystring.Occurrences(st)
 	fmt.Println("Above is the number of occurrences per character", charsoccurances)
-
 }

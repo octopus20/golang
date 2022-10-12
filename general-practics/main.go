@@ -18,8 +18,17 @@ func main() {
 	fmt.Println("Orderd array:", stringsort)
 
 	// Find Occurances
+
+	// chars count
 	st := "I like learning go and I do that every day"
+	st2 := "I learn go to write go scripts in go at work where I work"
 	charsoccurances := mystring.Occurrences(st)
-	fmt.Println("Above is the number of occurrences per character", charsoccurances)
+	fmt.Println(charsoccurances)
+
+	// Words count
+	wordsoccurances := mystring.Wordsoccurrences(st)
+	fmt.Println(wordsoccurances)
+	wordsoccurances2 := mystring.Wordsoccurrences(st2)
+	fmt.Println(wordsoccurances2)
 
 }

@@ -3,6 +3,7 @@ package mystring
 import (
 	"fmt"
 	"sort"
+	"strings"
 	"unicode"
 )
 
@@ -33,17 +34,17 @@ func Occurrences(st string) string {
 	return ""
 }
 
-// func Occurrences(st string) map[string]int {
-// 	// using strings.Field Function
-// 	input := strings.Fields(st)
-// 	wc := make(map[string]int)
-// 	for _, word := range input {
-// 		_, matched := wc[word]
-// 		if matched {
-// 			wc[word] += 1
-// 		} else {
-// 			wc[word] = 1
-// 		}
-// 	}
-// 	return wc
-// }
+func Wordsoccurrences(st string) map[string]int {
+	// using strings.Field Function
+	input := strings.Fields(st)
+	wc := make(map[string]int)
+	for _, word := range input {
+		_, matched := wc[word]
+		if matched {
+			wc[word] += 1
+		} else {
+			wc[word] = 1
+		}
+	}
+	return wc
+}
